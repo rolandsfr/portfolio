@@ -1,18 +1,37 @@
+// const container = document.getElementById("container");
+
 (async () => {
     let refFetch = await fetch("../.netlify/functions/token-hider/token-hider");
     let refresh = await refFetch.text()
     refresh = JSON.parse(refresh)
     let refresh_token = refresh["REFRESH"]
-   
+    // console.log(refresh)
+
+    // let code = "AQBcyYZJQ8HNchabRgf6dA3w-ycAQReBc-MtTLpBUBuOudGiSiqRei1mHcCPvxT_1QdVq4UQjd508mcBxdc7jaOMgS69qID2wa6szWkLsIIpUmguCPTFa4e-Qkj0a8qniP5uFZS_7g0p4ZKLGOfN_tZhTPzMJz_-A4s6PMcuklwoKu8sJv64GuwV6q3iKY35quuTqazBBeoaz2m9tDlkyaLN33O7smiMsVx6HCTfeGuuCXvkW4ElaQ9Qy3Qjzw3G3bTv8Uo8Fv82LRoMG4c7eviALSuiyAAqvf3e"
+
     let grant_type = "refresh_token"
     let code_type = "refresh_token"
     
+
+    // console.log(code)
     
     let client_id = "046b829766094645b6cef22e6583cfec"
+    // let client_secret = "b6fe72496f49427692b2eabe5a952ce6"
     let client_secret = refresh["CLIENT_SECRET"]
     let myurl = "https:%2F%2Fexample.com%2Fcallback"
 
-    // console.log(`https://accounts.spotify.com/authorize?client_id=${client_id}&response_type=code&redirect_uri=${myurl}&scope=user-read-private%20user-read-email%20user-read-currently-playing%20user-read-playback-state&state=34fFs29kd09`)
+    console.log(`https://accounts.spotify.com/authorize?client_id=${client_id}&response_type=code&redirect_uri=${myurl}&scope=user-read-private%20user-read-email%20user-read-currently-playing%20user-read-playback-state&state=34fFs29kd09`)
+    
+    // if (document.cookie.split(';').some((item) => item.trim().startsWith('refresh='))) {
+    //     let cookieValue = document.cookie
+    //      .split('; ')
+    //      .find(row => row.startsWith('refresh='))
+    //      .split('=')[1];
+
+    //     grant_type = "refresh_token"
+    //     code_type = "refresh_token"
+    //     code = cookieValue;
+    //  }
 
     let auth = await fetch(`https://accounts.spotify.com/api/token`, {
         method: "POST",
@@ -24,7 +43,11 @@
 
     let response = await auth.text();
     response = JSON.parse(response)
+    // refresh_token = response["refresh_token"]
 
+    // if (!document.cookie.split(';').some((item) => item.trim().startsWith('refresh='))) {
+    //     document.cookie = `refresh=${refresh_token}`
+    // }
     let access_token =  response["access_token"]
 
     getPlayback()
@@ -63,6 +86,8 @@
         }
     }
 })()
+
+console.log("height: ", $("#container .error").height())
 
 let offsetTop = 100;
 let ratio = $("#container .error").outerHeight() / $("#container").outerHeight()
