@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eloquent js</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
+
+        html {
+            font-size: 10px;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Open Sans', sans-serif;
+        }
+        #container {
+            background: #fafafa;
+            padding: 1.4em 1.55em;
+            border-radius: 7px;
+            min-width: 290px;
+            max-width: 300px;
+            min-height: 35px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .container_inner {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .track-info {
+            margin-left: 1.5em;
+        }
+
+        #track-name {
+            font-size: 1.4rem;
+            margin-top: 0;
+        }
+
+        .cover {
+            width: 40px;
+            border-radius: 7px;
+        }
+
+        #artist {
+            margin-top: -1em;
+            font-size: 1rem;
+            margin-bottom: 0;
+        }
+
+        .title img {
+            width: 18px;
+        }
+
+        .title {
+            display: flex;
+            align-items: center;
+            margin-top: -.5em;
+        }
+
+        .title p {
+            font-size: 1.2rem;
+            margin-left: .8em;
+        }
+
+        .error {
+            font-size: 7rem;
+            font-weight: 800;
+            color: #f5f5f5;
+            margin: 0;
+            position: absolute;
+            line-height: 0.9;
+            margin-top: 100%;
+            left: .2em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="widget">
+        <div class="title">
+            <img src="assets/spotify.svg" alt="icon">
+            <p>Currently offline :/</p>
+        </div>
+        <div id="container">
+            <div class="container_inner">
+                <img src="#" alt="" class="cover">
+                <div class="track-info">
+                    <h2 id="track-name"></h2>
+                    <p id="artist"></p>
+                </div>
+            </div>
+            <p class="error">Nothing to show right now</p>
+        </div>
+    </div>
+
+    <script src="js/requests.js" defer></script>
+    <!-- <script src="js/canvas.js"></script> -->
+    <!-- <script src="js/events.js"></script> -->
+    <!-- <script src="js/dom.js" defer></script> -->
+    <!-- <script src="js/generator.js"></script> -->
+    <!-- <script type="module" src="js/package.js"></script> -->
+    <!-- <script src="js/regexps.js"></script> -->
+    <!-- <script src="js/challanges.js"></script> -->
+    <!-- <script src="js/debugger.js"></script> -->
+    <!-- <script src="js/automaton.js"></script> -->
+    <!-- <script src="js/oop.js"></script> -->
+    <!-- <script src="js/higherOrder.js"></script> -->
+    <!-- <script src="js/linkedLists.js"></script> -->
+</body>
+</html>

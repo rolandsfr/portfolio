@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap");
+@font-face {
+  src: url("../fonts/Modern No. 20.ttf");
+  font-family: Modern; }
+
+@font-face {
+  src: url("../fonts/Glamor-Regular.ttf");
+  font-family: Glamor; }
+
+@font-face {
+  src: url("../fonts/AdallynDemo.otf");
+  font-family: Adallyn; }
+
+* {
+  color: #010101; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+#wrapper {
+  overflow-x: hidden; }
+
+[data-src] {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.heading {
+  font-family: Modern;
+  text-transform: uppercase; }
+
+.description {
+  font-family: 'Catamaran';
+  font-weight: 600; }
+
+.link {
+  font-family: Catamaran;
+  font-weight: light;
+  text-decoration: underline; }

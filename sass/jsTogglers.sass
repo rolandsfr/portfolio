@@ -1,0 +1,55 @@
+// Burger menu
+    
+.toggleBars
+    transition: 0.5s
+    div
+        width: 0
+        transition: 0.5s
+        
+        &:first-of-type
+            transform: rotate(45deg)
+            transition: 0.5s
+
+        &:last-of-type
+            transform: rotate(45deg)
+            transition: 0.5s
+
+
+.popUp
+    margin-left: 0 !important
+
+.getInPlace
+    margin-left: 15% !important
+
+.moveOut
+    margin-left: -4em
+
+.disappear
+    opacity: 0
+    &::after
+        width: 0
+
+.moveBack
+    transform: translateY(0) !important
+    opacity: 1 !important
+
+.moveFromMain
+    opacity: 0
+
+.moveIn
+    margin-top: -100vh
+    z-index: 3
+
+.alignBurger
+    margin-top: 5em
+    transform: translateX(1em)
+
+.move-fixed-burger
+    margin-left: 0
+
+.moveBarsInPlace
+    margin-left: 0em
+
+.logoInPlace
+    left: 0em !important
+    top: 0em !important
