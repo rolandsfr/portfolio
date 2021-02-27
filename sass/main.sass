@@ -69,7 +69,7 @@ body
     width: 80%
     height: 100%
     background: #ccc
-    opacity: 0.1
+    opacity: 0.2
     margin-left: 20%
     
 
@@ -173,25 +173,25 @@ body
 .close-menu
     position: relative
     font-weight: bold
-    font-size: 3.5rem !important
-    cursor: pointer
+    font-size: 4rem !important
+    font-family: "Modern", sans-serif
 
     &:before
         position: absolute
         content: ''
         left: 0
-        top: 0.45em
+        top: 0.58em
         margin-left: 1em
         display: inline-block
         width: 0
-        height: 3px
+        height: 2px
         background: #000
         margin-top: 0 !important
         transition: 0.4s
 
 .close-menu.open-menu
     &:before
-        width: 30vw
+        width: 35vw
 
 
 // Name styles
@@ -215,18 +215,21 @@ body
 
 .title
     position: absolute
-    bottom: 5em
-    left: 5em
+    top: 46%
+    left: .3em
     font-family: 'Open Sans', arial
 
-    h3
-        font-size: 1.4rem
-        font-weight: bold
+    // h3
+    //     font-size: 1.4rem
+    //     font-weight: bold
 
     p
         font-weight: 400
-        font-size: 1rem
+        font-size: 1.6rem
         margin-top: 0.2em
+
+.logo-basic
+    display: none
 
 
 // Mobile navigation menu
@@ -314,7 +317,7 @@ body
     &:not(#mainScreen)
         padding-top: 4em
 
-    &:nth-child(even)
+    &:nth-child(odd)
         background: #f9f9f9 
 
 
@@ -322,19 +325,22 @@ body
 // t Me section
 
 #aboutMe
+    min-height: 70vh !important
+    background: #f9f9f9 
+    margin-top: -10vh
+
     .about-section
         font-size: 1.6rem
         font-family: 'Open sans', arial
 
         .about-wrapper
             width: 100%
-            min-height: 100vh
+            min-height: 70vh
 
         .container
             display: flex
             justify-content: center
             height: auto
-            margin-top: -9vh
             align-items: flex-start
             position: absolute
             top: 0
@@ -344,10 +350,9 @@ body
 
         .about-bg
             width: 100%
-            height: 70vh
+            height: 100%
             position: absolute
-            bottom: 0
-            z-index: -1
+            top: 16vh
             background-size: cover
             background-position: center
             background-attachment: fixed
@@ -363,6 +368,7 @@ body
     .about-info
         background: #F3F3F3
         padding: 2.5em
+        margin-top: -8vh
 
         h2
             font-weight: bold
@@ -377,7 +383,7 @@ body
 
     .skills
         margin-left: 2em
-        margin-top: 4vh
+        margin-top: -2.5em
 
         h3
             font-size: 1.8rem
@@ -386,7 +392,7 @@ body
             letter-spacing: 0.1em
 
         ul.skillset
-            margin-top: 1.5em
+            margin-top: 1.3em
             display: grid
             grid-template-columns: 1fr 1fr
             column-gap: 1.5em
@@ -462,11 +468,12 @@ section#portfolio
                     top: -.25em
                     line-height: .8em
                     font-size: 13rem
-                    color: #fafafa
+                    color: #fcfcfc
                     font-weight: 800
                     width: 400px
                     word-break: break-word
                     z-index: 0  
+                    user-select: none
 
                 .details-content
                     position: relative
@@ -487,6 +494,7 @@ section#portfolio
                         padding: 0.7em 2em
                         background: #8e4df0
                         width: 100%
+                        max-width: 200px
                         color: #fff
                         border: none
                         display: inline-block
@@ -604,13 +612,15 @@ section#portfolio
         height: 100%
         background: #f0f0f0
         width: 50%
-        z-index: -1
+        z-index: 0
 
 
     .side-info
         display: flex
         justify-content: space-between
         flex-direction: column
+        position: relative
+        z-index: 5
 
         h1
             font-size: 4.5rem
@@ -649,6 +659,7 @@ section#portfolio
 
     .contact-info
         margin-top: 4em
+        font-family: "Roboto", sans-serif
 
         h4
             font-weight: 700
@@ -670,7 +681,7 @@ section#portfolio
     form
         display: flex
         flex-direction: column
-        background: #f7f7f7
+        background: #f2f2f2
         padding: 1.5em 2em
         max-width: 400px
 
@@ -695,7 +706,7 @@ section#portfolio
         input, textarea
             border: transparent 1px solid
             outline: none
-            background: #f0f0f0
+            background: #e9e9e9
             padding: 0.6em 1em
             transition: 0.3s all
 
@@ -731,9 +742,14 @@ section#portfolio
 
 
 #slogan
+    min-height: 50vh !important
+    display: flex
+    align-items: center
+    justify-content: center
+    padding-top: 0 !important
 
     .slogan-block
-        height: 100vh
+        height: 100% !important
         display: flex
         align-items: center
         justify-content: center
@@ -747,16 +763,16 @@ section#portfolio
             
         .slogan-line
             &-1
-                font-size: 2.7rem
+                font-size: 2rem
                 line-height: 1.7em
 
             &-2
-                font-size: 3.4rem
-                margin-top: 0.2em
+                font-size: 2.8rem
+                margin-top: 0.4em
 
     .slogan-logo
-        width: 3.5em 
-        margin-top: 5em 
+        width: 3em 
+        margin-top: 4em 
 
     .container
         position: relative !important
@@ -893,11 +909,12 @@ footer
 
         .slogan-line
             &-1
-                font-size: 2rem !important
+                font-size: 1.6rem !important
 
             &-2
-                font-size: 3rem !important
-                margin-top: 0.5em !important
+                font-size: 2.4rem !important
+                margin-top: 0.3em !important
+                line-height: 1.7
 
         .slogan-logo
             display: none
@@ -913,11 +930,14 @@ footer
     .container
         width: 90% !important
 
-    .slogan-block
-        height: 100vh !important
-
     .about-bg
         background-attachment: scroll !important
+
+    #slogan
+        min-height: 30vh !important
+
+    .view-work
+        max-width: 100% !important 
 
 @media screen and ( max-width:  425px)
 
@@ -959,12 +979,15 @@ footer
         grid-template-columns: 1fr !important
         grid-gap: 0 !important
 
-    .skills
-       .skillset
+    .skillset
+        margin-top: 1em !important
 
-            li
-                &:first-of-type
-                    margin-top: 0 !important
+        li
+            &:first-of-type
+                margin-top: 0 !important    
+
+    .about-wrapper
+        padding-bottom: 3em !important
 
     .work-details
         width: 100% !important
@@ -989,15 +1012,26 @@ footer
 
 @media screen and ( max-width:  1024px)
 
+    .skills
+        margin-top: 2.2em !important
+        
+        h3
+            margin-bottom: -1em
+
+        .skillset
+            margin-top: 0 
+
     .dark-bg
         display: none
 
     .widget
         #container
-            background: #fafafa !important
+            background: #f0f0f0 !important
 
         .error
-            color: #f5f5f5 !important
+            color: #e9e9e9 !important
+
+        margin-bottom: -1em
 
     #contacts
         .container
@@ -1005,7 +1039,7 @@ footer
             align-items: flex-start
 
         .contactMe
-            margin-top: 3em !important
+            margin-top: 2em !important
             margin-bottom: 3em
 
     .main-container
@@ -1058,13 +1092,9 @@ footer
             font-size: 2.1rem !important
 
         .skillset
-            margin-top: 2em !important
 
             li
                 margin-top: 2.2em !important
-
-    .overlay
-        opacity: 0.2
 
 @media only screen and (min-width: 1025px)
     #contacts
@@ -1087,53 +1117,45 @@ footer
         display: none
 
     #mainScreen .top-menu
-        left: -2em !important
-        margin-left: 0 !important
-        top: 9em !important
-        position: absolute
-        display: flex !important
+        display: none
 
-    
-    .top-menu
+    .logo-basic
         position: absolute
-        top: 20em
-
-        img
-            width: 3.5em
-            margin-top: 20em
-            margin-left: .6em
-            position: absolute
+        bottom: 60%
+        width: 3.5em
+        left: 0
+        display: block
 
     .fullName
         margin-left: 0
         position: absolute
         left: 0
-        top: 27em
+        top: 47%
 
 
         .name
-            font-size: 8rem
+            font-size: 9rem
 
         .surname
-            font-size: 3rem
+            font-size: 4rem
 
     .title
-        position: absolute
-        bottom: 5em
-        left: 0
+        // position: absolute
+        // bottom: 5em
+        // left: 0
         font-family: 'Open Sans', arial
 
 
-        h3
-            font-size: 1.8rem
-            text-transform: none !important
-            font-weight: bold
-            letter-spacing: 0 !important
+        // h3
+        //     font-size: 1.8rem
+        //     text-transform: none !important
+        //     font-weight: bold
+        //     letter-spacing: 0 !important
 
         p
             text-transform: none !important
             font-weight: 400
-            font-size: 1.4rem
+            font-size: 1.6rem
             letter-spacing: 0.3em
             margin-top: 0.2em
             letter-spacing: normal !important
@@ -1211,17 +1233,19 @@ footer
         .title
             position: static !important
             margin-left: 0.5em
-            
-            h3
-                font-size: 2.4rem 
+            margin-top: 7em
+
+            .key
+                font-weight: bold
 
             p
-                font-size: 1.6rem
+                font-size: 1.8rem
+
 
         .fullName
             position: static !important
             margin-left: 0
-            margin-top: 0.5em
+            margin-top: 0.2em
 
         .basic-info
             position: absolute
@@ -1252,6 +1276,9 @@ footer
     .skills
         margin-top: 2em !important
 
+        h3
+            margin-bottom: 0
+
         .skillset
 
             li
@@ -1259,10 +1286,15 @@ footer
                     margin-top: 0 !important
 
     .about-wrapper
-        padding-bottom: 2em
+        padding-bottom: 3em
 
-    .slogan-block
-        height: 70vh !important
+    #slogan
+        height: 60vh !important
+
+        .slogan-line
+            &-1
+                margin-top: -.5em
+
 
     .heading
         font-size: 2.5rem !important
@@ -1272,6 +1304,13 @@ footer
         grid-template-columns: 1fr !important
         grid-gap: 0 !important
         margin-top: 0em !important
+
+    .skillset
+        margin-top: 2em !important
+
+        li
+            &:first-of-type
+                margin-top: 0 !important
 
     .works
         margin-top: 4em !important
@@ -1309,20 +1348,18 @@ footer
             left: -1em !important
 
         .view-work
-            padding: .9em 2em !important
+            padding: .7em 2em !important
 
     .title
         position: static !important
         margin-left: 0.5em
-        
-        h3
-            font-size: 1.7rem  !important
+        margin-top: -1.5em !important
 
         p
-            font-size: 1.2rem !important
+            font-size: 1.5rem !important
 
     .name
-        font-size: 4rem !important
+        font-size: 5.5rem !important
 
     .surname
         font-size: 2rem

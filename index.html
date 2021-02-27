@@ -26,8 +26,6 @@
       />
 
     <!-- Fonts -->
-
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:300,400,500,700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 
 </head>
@@ -47,10 +45,10 @@
                     <a href="#mainScreen">01 - Intro</a>
                 </li>
                 <li>
-                    <a href="#aboutMe">02 - About Me</a>
+                    <a href="#portfolio">02 - Portfolio</a>
                 </li>
                 <li>
-                    <a href="#portfolio">03 - Portfolio</a>
+                    <a href="#aboutMe">03 - About Me</a>
                 </li>
                 <li>
                     <a href="#contacts">04 - Contacts</a>
@@ -66,8 +64,8 @@
                 <span class="section-id"># 01</span>
 
                 <ul>
-                    <li><a href="#aboutMe">About Me</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#aboutMe">About Me</a></li>
                     <li><a href="#contacts">Contacts</a></li>
                     <li><a href="#slogan">Slogan</a></li>
                 </ul>
@@ -97,12 +95,10 @@
                             </div>
                         </div>
         
-                        <!-- Some basic information -->
-        
                         <div class="basic-info">
+                            <img src="img/Logo.svg" alt="" class="logo-basic">
                             <div class="title">
-                                <h3 class="wow fadeInUp" data-wow-delay="0.3s">Frontend</h3>
-                                <p class="wow fadeInUp" data-wow-delay="0.4s">Web Developer</p>
+                                <p class="wow fadeInUp" data-wow-delay="0.4s"><span class="key">Frontend</span> Web Developer</p>
                             </div>
                             <div class="fullName heading">
                                 <p class="name wow fadeInUp" data-wow-delay="0.1s">Roland</p>
@@ -117,57 +113,9 @@
                 </div>
            </div>
         </section>
-        
 
-        <!-- !TODO: REDESIGN -->
-        <section data-section="2" class="aboutMe" id="aboutMe">
-
-            <!-- Top fixed nav  -->
-            <!-- <div class="container">
-                <nav class="top-menu">
-                    <img class="header-logo" src="img/Logo.svg" alt="Logo" width="100px">
-                    <div class="burger-menu">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </nav>
-            </div> -->
-
-            <div class="about-section">
-                <div class="about-bg" data-src="img/jeremy-bishop-YO1_gAqsrzw-unsplash.jpg">
-                    <div class="about-wrapper">
-                        <div class="container">
-                            <div class="about-info wow fadeInUp">
-                                <h2>About Me</h2>
-                        
-                                <div class="about-descr">
-                                    <p>I am a 16 year old enthusiast in the field of front-end development. Was born and currently living in Latvia, Northern Europe. In my free time I love to make music and do calisthenics. Currently studying at the Riga French lyceum, exact science field of study. I can fluently speak latvian, russian and english languages, learning french as well.</p>
-                                    <p>Looking to do front-end work in exciting and potentially successful projects. Have had decent amount of experience working in Minecraft's commercial and pvp server related side. Although my specialization is a front-end developer, I can also provide UI/UX designer services for smaller projects (all of my web projects including this website have been designed by me)</p>
-                                </div>
-                            </div>
-                        
-                            <div class="skills">
-                                <h3>My skills</h3>
-                        
-                                <ul class="skillset">
-                                    <li class="wow fadeInUp"><i class="fab fa-html5"></i>HTML</li>
-                                    <li class="wow fadeInUp"><i class="fab fa-css3-alt"></i>CSS / SASS</li>
-                                    <li class="wow fadeInUp"><i class="fab fa-js"></i>Javascript ES6</li>
-                                    <li class="wow fadeInUp"><i class="fas fa-bug"></i>Typescript</li>
-                                    <li class="wow fadeInUp"><i class="fas fa-code"></i>jQuery</li>
-                                    <li class="wow fadeInUp"><i class="fab fa-react"></i>ReactJs</li>
-                                    <!-- <li class="wow fadeInUp"><i class="fas fa-vial"></i>Unit tests / Chai</li> -->
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-
-        <section data-section="3" id="portfolio">            
+        <!-- Works section -->
+        <section data-section="2" id="portfolio">            
             <div class="container">
                 <h2 class="heading">My works</h2>
 
@@ -213,7 +161,7 @@
                                 <div class="details-content">
                                     <h3 class="work-title">Yeetcraft</h3>
                                     <p class="work-descr">
-                                        A website for a kit pvp server. Not so long ago, the server's owner has abondoned the project.
+                                        A website for a kit pvp server. Not so long ago, servers owner abondoned the project.
                                     </p>
                                     <a href="http://yeetcraft.netlify.app/" class="view-work">View work</a>
                                 </div>
@@ -223,9 +171,44 @@
                         <img src="img/yc_thumbnail.png" alt="Work image" class="work-img wow fadeInUp" data-wow-delay="0.1s">
                     </div>
                 </div>
-
         </section>
 
+        <!-- About me section -->
+        <section data-section="3" class="aboutMe" id="aboutMe">
+            <div class="about-section">
+                <div class="about-bg" data-src="img/jeremy-bishop-YO1_gAqsrzw-unsplash.jpg">
+                    <div class="about-wrapper">
+                        <div class="container">
+                            <div class="about-info wow fadeInUp">
+                                <h2>About Me</h2>
+                        
+                                <div class="about-descr">
+                                    <p>I am a 16 year old enthusiast in the field of front-end development. Was born and currently living in Latvia, Northern Europe. In my free time I love to make music and do calisthenics. Currently studying at the Riga French lyceum, exact science field of study. I can fluently speak latvian, russian and english languages, learning french as well.</p>
+                                    <p>Looking to do front-end work in exciting and potentially successful projects. Have had decent amount of experience working in Minecraft's commercial and pvp server related side. Although my specialization is a front-end developer, I can provide UI/UX designer services for smaller projects (all of my web projects including this website have been designed by me)</p>
+                                </div>
+                            </div>
+                        
+                            <div class="skills">
+                                <h3>My skills</h3>
+                        
+                                <ul class="skillset">
+                                    <li class="wow fadeInUp"><i class="fab fa-html5"></i>HTML</li>
+                                    <li class="wow fadeInUp"><i class="fab fa-css3-alt"></i>CSS / SASS</li>
+                                    <li class="wow fadeInUp"><i class="fab fa-js"></i>Javascript ES6</li>
+                                    <li class="wow fadeInUp"><i class="fas fa-bug"></i>Typescript</li>
+                                    <li class="wow fadeInUp"><i class="fas fa-code"></i>jQuery</li>
+                                    <li class="wow fadeInUp"><i class="fab fa-react"></i>ReactJs</li>
+                                    <!-- coming soon -->
+                                    <!-- <li class="wow fadeInUp"><i class="fas fa-vial"></i>Unit tests / Chai</li> -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacts section -->
         <section data-section="4" id="contacts">
             <div class="dark-bg"></div>
 
@@ -253,10 +236,11 @@
                     <div class="contact-info">
                         <p><i class="far fa-envelope"></i>rolands.affaires@gmail.com</p>
                         <p><i class="fab fa-discord"></i>Roly#8391</p>
-                        <p><i class="fab fa-instagram"></i>rolyuhh</p>
+                        <p><i class="fab fa-twitter"></i>rolyuhh</p>
                     </div> 
                 </div>
 
+                <!-- Contact form -->
                 <div class="contactMe wow fadeInUp">
                     <form action="" netlify class="contact-form">
                     
@@ -276,11 +260,12 @@
             </div>
         </section>
 
+        <!-- Slogan -->
         <section data-section="5" id="slogan">
             <div class="container">
                 <div class="slogan-block">
-                    <h2 class="slogan-line-1 wow fadeInUp">The one who believes wins.</h2>
-                    <h1 class="slogan-line-2 wow fadeInUp" data-wow-delay="0.1s">And I do.</h1>
+                    <h2 class="slogan-line-1 wow fadeInUp">A website without vistors</h2>
+                    <h1 class="slogan-line-2 wow fadeInUp" data-wow-delay="0.1s">is like a ship lost in the horizon.</h1>
 
                     <img src="img/Logo.svg" alt="Logo" class="slogan-logo floating" data-wow-delay="0.2s">
                 </div>
@@ -288,6 +273,7 @@
         </section>        
     </div>
 
+    <!-- Fotter -->
     <footer>
         <div class="container">
             <div class="footer-block">
@@ -295,7 +281,7 @@
                     <h2 class="footer-title">Social media</h2>
 
                     <ul class="footer-links">
-                        <li class="wow fadeInUp"><a href="https://www.instagram.com/rolyuhh/">Instagram</a></li>
+                        <li class="wow fadeInUp"><a href="https://twitter.com/rolyuhh">Twitter</a></li>
                         <li class="wow fadeInUp"><a href="https://github.com/rolandsfr/">Github</a></li>
                     </ul>
                 </section>
@@ -305,8 +291,8 @@
 
                     <ul class="footer-links">
                         <li class="wow fadeInUp" data-wow-delay="0.2s"><a href="#mainScreen">Intro</a></li>
-                        <li class="wow fadeInUp" data-wow-delay="0.2s"><a href="#aboutMe">About me</a></li>
                         <li class="wow fadeInUp" data-wow-delay="0.2s"><a href="#portfolio">My works</a></li>
+                        <li class="wow fadeInUp" data-wow-delay="0.2s"><a href="#aboutMe">About me</a></li>
                         <li class="wow fadeInUp" data-wow-delay="0.2s"><a href="#contacts">Contacts</a></li>
                         <li class="wow fadeInUp" data-wow-delay="0.2s"><a href="#slogan">Slogan</a></li>
                     </ul>
@@ -317,6 +303,7 @@
 
                     <ul class="footer-links">
                         <li class="wow fadeInUp" data-wow-delay="0.3s"><a href="https://github.com/rolandsfr/JS-scrips">Javascript algorithms</a></li>
+                        <li class="wow fadeInUp" data-wow-delay="0.3s"><a href="https://github.com/rolandsfr/aau-bot">Among Us Discord bot</a></li>
                     </ul>
                 </section>
             </div>

@@ -9,14 +9,15 @@ $("form").submit((e) => {
 
     $("form input[type=text], #message").css("border", "none")
 
+    // Validating input values
     if($("form textarea, form input[type=email], form input[type=name]").val() === ""){
         $(".form-error").show().html("Please, fill in all the fields.")
         $("form textarea, form input[type=email], form input[type=name]").css("border", "1px solid #DC000F");
     } else {
         // Sending the email
-
         $(".form-error").html("");
 
+        // Gatherting information
         let templateParams = {
             name: $("#name").val(),
             email: $("#email").val(),
