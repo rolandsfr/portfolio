@@ -13,6 +13,9 @@ $(window).on("load", () => {
         })
     }, 1500)
 
+    $(".about-wrapper").height($(".about-wrapper .container").height())
+
+
     setTimeout(() => {
         if($(document).width() >= 1024) {
             new WOW().init();
@@ -172,7 +175,7 @@ $(".view-portfolio").click((e) => {
 })
 
 // #aboutMe section's wrapping for responsiveness reasons
-$(".about-wrapper").height($(".about-wrapper .container").height())
+// $(".about-wrapper").height($(".about-wrapper .container").height())
 let currentSectionCount = 1;
 
 

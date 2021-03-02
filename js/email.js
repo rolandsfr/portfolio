@@ -1,5 +1,9 @@
-(function(){
-    emailjs.init("user_z3F7jyQ8qvbeOobnstw7p");
+(async function(){
+    let keys = await fetch("../.netlify/functions/token-hider/token-hider");
+    keysFetch = await keys.text()
+    keys_data = JSON.parse(keysFetch)
+    let emailjs_token = keys_data["EMAIL_JS"]
+    emailjs.init(emailjs_token);
 })();
 
 $("form").submit((e) => {
@@ -26,7 +30,6 @@ $("form").submit((e) => {
 
         emailjs.send('gmail', 'msg', templateParams)
             .then(function(response) {
-                console.log("ayo bby")
                 $(".form-error").html("Your message was successfully sent!").addClass("success").show();
                 $("#email, #name, form textarea").val("");
                 $("form input, form textarea").css("border", "none");
